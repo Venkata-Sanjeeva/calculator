@@ -7,36 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p class="display"></p>
-    <p class="row-1">
-        <button onclick="displaySentence('1')">1</button>
-        <button onclick="displaySentence('2')">2</button>
-        <button onclick="displaySentence('3')">3</button>
-        <button onclick="displaySentence('+')" id="operator">+</button>
-    </p>
-    <p class="row-2">
-        <button onclick="displaySentence('4')">4</button>
-        <button onclick="displaySentence('5')">5</button>
-        <button onclick="displaySentence('6')">6</button>
-        <button onclick="displaySentence('-')" id="operator">-</button>
-    </p>
-    <p class="row-3">
-        <button onclick="displaySentence('7')">7</button>
-        <button onclick="displaySentence('8')">8</button>
-        <button onclick="displaySentence('9')">9</button>
-        <button onclick="displaySentence('*')" id="operator">*</button>
-    </p>
-    <p class="row-4">
-        <button onclick="displaySentence('0')">0</button>
-        <button onclick="displaySentence('.')">.</button>
-        <button onclick="calculation()">=</button>
-        <button onclick="displaySentence('/')" id="operator">/</button>
-    </p>
-    <button onclick="
-    sentence = '';
-    screen.innerText = ' ';
-    localStorage.removeItem('result');
-    " id="clear">Clear</button>
+    <div class="container">
+        <p class="display"></p>
+        <p class="row-1">
+            <button onclick="displaySentence('1')">1</button>
+            <button onclick="displaySentence('2')">2</button>
+            <button onclick="displaySentence('3')">3</button>
+            <button onclick="displaySentence('+')" id="operator">+</button>
+        </p>
+        <p class="row-2">
+            <button onclick="displaySentence('4')">4</button>
+            <button onclick="displaySentence('5')">5</button>
+            <button onclick="displaySentence('6')">6</button>
+            <button onclick="displaySentence('-')" id="operator">-</button>
+        </p>
+        <p class="row-3">
+            <button onclick="displaySentence('7')">7</button>
+            <button onclick="displaySentence('8')">8</button>
+            <button onclick="displaySentence('9')">9</button>
+            <button onclick="displaySentence('*')" id="operator">*</button>
+        </p>
+        <p class="row-4">
+            <button onclick="displaySentence('0')">0</button>
+            <button onclick="displaySentence('.')">.</button>
+            <button onclick="calculation()">=</button>
+            <button onclick="displaySentence('/')" id="operator">/</button>
+        </p>
+        <button onclick="
+        sentence = '';
+        screen.innerText = ' ';
+        localStorage.removeItem('result');
+        " id="clear">Clear</button>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>
